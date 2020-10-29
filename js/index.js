@@ -41,24 +41,41 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-
+// grabbing nav a's individually
 const firstNav = document.querySelector('nav a')
 const secNav = firstNav.nextElementSibling
 const triNav = secNav.nextElementSibling
 const fourNav = triNav.nextElementSibling
 const fifNav = fourNav.nextElementSibling
 const sixNav = fifNav.nextElementSibling
-
+// changing nav a's text individually
 document.querySelector('nav a').textContent = 'Services'
 secNav.textContent = 'Product'
 triNav.textContent = 'Vision'
 fourNav.textContent = 'Features'
 fifNav.textContent = 'About'
 sixNav.textContent = 'Contact'
-
+// console logging to see what showed up
 console.log(firstNav)
 console.log(secNav)
 console.log(triNav)
 console.log(fourNav)
 console.log(fifNav)
 console.log(sixNav)
+
+// add src to img
+document.querySelector('img.logo').src = 'img/logo.png'
+
+// adding text to h1 element. append 2nd and 3rd to 1st
+const firstH1 = document.querySelector('h1')
+const secH1 = document.createElement('h1')
+const triH1 = document.createElement('h1')
+firstH1.textContent = 'DOM'
+secH1.textContent = 'Is'
+triH1.textContent = 'Awesome'
+firstH1.appendChild(secH1)
+firstH1.appendChild(triH1)
+// console log to check work
+console.log (firstH1)
+console.log(secH1)
+console.log(triH1)
