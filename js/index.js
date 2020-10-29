@@ -55,13 +55,8 @@ triNav.textContent = 'Vision'
 fourNav.textContent = 'Features'
 fifNav.textContent = 'About'
 sixNav.textContent = 'Contact'
-// console logging to see what showed up
-console.log(firstNav)
-console.log(secNav)
-console.log(triNav)
-console.log(fourNav)
-console.log(fifNav)
-console.log(sixNav)
+
+
 
 // add src to img
 document.querySelector('img.logo').src = 'img/logo.png'
@@ -75,7 +70,39 @@ secH1.textContent = 'Is'
 triH1.textContent = 'Awesome'
 firstH1.appendChild(secH1)
 firstH1.appendChild(triH1)
+
+// adding text to button
+const butt1 = document.querySelector('button')
+butt1.textContent = 'Get Started'
+
+// adding src to img. 
+document.querySelector('.cta img').src = 'img/header-img.png'
+
+// add text to h4 and p's
+const firstH4 = document.querySelector('.top-content h4')
+const secH4 = document.querySelector('.text-content h4')
+const firstP = document.querySelector('.top-content p')
+const secP = document.querySelector('.text-content p')
+
+firstH4.textContent = 'Features'
+secH4.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
+in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
+scelerisque quis.'
+
+
+
 // console log to check work
+console.log(firstNav)
+console.log(secNav)
+console.log(triNav)
+console.log(fourNav)
+console.log(fifNav)
+console.log(sixNav)
 console.log (firstH1)
 console.log(secH1)
 console.log(triH1)
+console.log(butt1)
+console.log(firstH4)
+console.log(secH4)
+console.log(firstP)
+console.log(secP)
