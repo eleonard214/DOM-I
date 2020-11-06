@@ -76,22 +76,57 @@ const butt1 = document.querySelector('button')
 butt1.textContent = 'Get Started'
 
 // adding src to img. 
-document.querySelector('.cta img').src = 'img/header-img.png'
+document.querySelector('.cta img').src ="img/header-img.png"
+document.querySelector('.middle-img').src = 'img/mid-page-accent.jpg'
 
 // add text to h4 and p's
-const firstH4 = document.querySelector('.top-content h4')
-const secH4 = document.querySelector('.text-content h4')
-const firstP = document.querySelector('.top-content p')
-const secP = document.querySelector('.text-content p')
+const topH4 = document.querySelectorAll('.main-content .top-content .text-content h4')
+topH4[0].textContent = 'Features'
+topH4[1].textContent = 'About'
+const topP = document.querySelectorAll('.main-content .top-content .text-content p')
+topP[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+topP[1].textContent = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+const botH4 = document.querySelectorAll('.main-content .bottom-content  .text-content h4')
+botH4[0].textContent = 'Services'
+botH4[1].textContent = 'Product'
+botH4[2].textContent = 'Vision'
+const botP = document.querySelectorAll('.main-content .bottom-content .text-content P')
+botP[0].textContent = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+botP[1].textContent = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+botP[2].textContent = 'Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+const contH4 = document.querySelector('.contact h4')
+contH4.textContent = 'Contact'
+const contP = document.querySelectorAll('.contact P')
+contP[0].textContent = '123 Way 456 Street '
+const anoP = document.createElement('p')
+anoP.textContent = 'Somewhere, USA'
+contP[0].appendChild(anoP)
+contP[1].textContent = '1 (888) 888-8888'
+contP[2].textContent = 'sales@greatidea.io'
 
-firstH4.textContent = 'Features'
-secH4.textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,
-in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus
-scelerisque quis.'
+//add text to footer paragraph
+const footP = document.querySelector('footer p')
+footP.textContent = 'Copyright Great Idea! 2018'
 
+//change nav text to green
+const navG = document.querySelectorAll('nav a')
+navG[0].style.color="green"
+navG[1].style.color="green"
+navG[2].style.color="green"
+navG[3].style.color="green"
+navG[4].style.color="green"
+navG[5].style.color="green"
 
+//append and prepend
+const newNav1 = document.createElement('a')
+newNav1.textContent = 'Always'
+const newNav2 = document.createElement('a')
+newNav2.textContent = 'Forever'
+const navs = document.querySelector('nav')
+navs.appendChild(newNav1)
+navs.prepend(newNav2)
 
-// console log to check work
+// testing 
 console.log(firstNav)
 console.log(secNav)
 console.log(triNav)
@@ -102,7 +137,18 @@ console.log (firstH1)
 console.log(secH1)
 console.log(triH1)
 console.log(butt1)
-console.log(firstH4)
-console.log(secH4)
-console.log(firstP)
-console.log(secP)
+console.log(topH4[0])
+console.log(topH4[1])
+console.log(topP[0])
+console.log(topP[1])
+console.log(botH4[0])
+console.log(botH4[1])
+console.log(botH4[2])
+console.log(botP[0])
+console.log(botP[1])
+console.log(botP[2])
+console.log(contH4)
+console.log(contP[0])
+console.log(contP[1])
+console.log(contP[2])
+console.log(navG)
